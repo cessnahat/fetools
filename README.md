@@ -20,6 +20,7 @@ Coming soon.
 
 ## Changelog
 
+#### `1.0.2` (18 Jan 2021)
 #### `1.0.1` (17 Jan 2021)
 - Squash bugs
 
