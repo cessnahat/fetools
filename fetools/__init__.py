@@ -1,15 +1,6 @@
 import os
 
-__all__ = ["pause", "clear", "VRC", "VSTARS", "VERAM"]
-
-
-#########################
-# Lib-level constants
-#########################
-
-VRC = "vrc"
-VSTARS = "veram"
-VERAM = "veram"
+__all__ = ["pause", "clearscreen"]
 
 
 #########################
