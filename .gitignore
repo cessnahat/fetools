@@ -1,0 +1,8 @@
+# Distribution
+build/
+dist/
+fetools.egg-info/
+
+# Dev stuff
+venv/
+*.bat
