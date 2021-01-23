@@ -1,3 +1,5 @@
+![pypi version](https://img.shields.io/pypi/v/fetools) ![release date](https://img.shields.io/github/release-date/cessnahat/fetools)
+
 # FE Tools
 
 A toolset for VATUSA FEs.
