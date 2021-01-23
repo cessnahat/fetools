@@ -1,5 +1,3 @@
-https://img.shields.io/pypi/v/fetools https://img.shields.io/github/v/release/cessnahat/fetools?label=github%20release
-
 # FE Tools
 
 A toolset for VATUSA FEs.
