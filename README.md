@@ -21,4 +21,4 @@ Coming soon.
 
 
 ## Changelog
-See CHANGELOG.md
+See [CHANGELOG.md](https://github.com/cessnahat/fetools/blob/main/CHANGELOG.md)
