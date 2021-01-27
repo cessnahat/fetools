@@ -9,6 +9,7 @@ setup(
 	description="Makes some tasks easier for VATUSA FEs.",
 	long_description=long_desc,
 	long_description_content_type="text/markdown",
+	url="https://github.com/cessnahat/fetools",
 	license="GNU GPLv3",
 	classifiers=[
 		"Programming Language :: Python :: 3"
