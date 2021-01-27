@@ -13,7 +13,7 @@ Run `pip install fetools` from the command line
 
 
 ## Documentation
-Coming soon.
+See the [Wiki](https://github.com/cessnahat/fetools/wiki)
 
 
 ## License
