@@ -1,5 +1,8 @@
 ## Changelog
 
+#### `1.2.0` (27 Jan 2021)
+- Add tools for working with alias files (`fetools.alias`)
+
 #### `1.1.0` (22 Jan 2021)
 - Add color converters
 
