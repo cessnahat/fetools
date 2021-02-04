@@ -17,7 +17,7 @@ See the [Wiki](https://github.com/cessnahat/fetools/wiki)
 
 
 ## License
-[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[GNU GPLv3](https://github.com/cessnahat/fetools/blob/main/LICENSE.md)
 
 
 ## Changelog
