@@ -10,11 +10,18 @@ setup(
 	long_description=long_desc,
 	long_description_content_type="text/markdown",
 	url="https://github.com/cessnahat/fetools",
-	license="GNU GPLv3",
+	license="MIT",
 	classifiers=[
-		"Programming Language :: Python :: 3"
+		"Programming Language :: Python :: 3 :: Only",
+		"License :: OSI Approved :: MIT License",
+		"Intended Audience :: Developers",
+		"Natural Language :: English"
 	],
 	keywords="vatsim vrc vstars veram",
+	project_urls = [
+		"Documentation": "https://github.com/cessnahat/fetools/wiki",
+		"Source": "https://github.com/cessnahat/fetools/tree/main/fetools"
+	]
 	packages=find_packages(),
 	python_requires=">=3.6, <4"
 )
