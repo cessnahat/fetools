@@ -17,7 +17,7 @@ See the [Wiki](https://github.com/cessnahat/fetools/wiki)
 
 
 ## License
-[MIT](https://github.com/cessnahat/fetools/blob/main/LICENSE)
+[MIT](https://github.com/cessnahat/fetools/blob/main/LICENSE.md)
 
 
 ## Changelog
