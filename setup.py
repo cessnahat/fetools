@@ -21,7 +21,7 @@ setup(
 	project_urls=[
 		"Documentation": "https://github.com/cessnahat/fetools/wiki",
 		"Source": "https://github.com/cessnahat/fetools/tree/main/fetools"
-	]
+	],
 	packages=find_packages(),
 	python_requires=">=3.6, <4"
 )
