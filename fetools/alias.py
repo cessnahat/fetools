@@ -62,7 +62,11 @@ class AliasCommands:
         elif client.lower() in ("vstars", "veram"):
             # Write to '.xml' format (vSTARS & vERAM)
             root = self.dumpxml()
-            ET.indent(root)  # (Pretty print)
+            # (ET.indent only works in Python 3.9+)
+            try:
+                ET.indent(root)
+            except:
+                pass
             return ET.tostring(root, encoding="unicode")
         else:
             raise ValueError("unknown client " + repr(client))
