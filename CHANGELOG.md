@@ -1,14 +1,17 @@
 ## Changelog
 
-#### `1.2.0` (27 Jan 2021)
+#### `1.2.1` (2021-02-16)
+- Bug fixes to fetools.alias
+
+#### `1.2.0` (2021-01-27)
 - Add tools for working with alias files (`fetools.alias`)
 
-#### `1.1.0` (22 Jan 2021)
+#### `1.1.0` (2021-01-22)
 - Add color converters
 
-#### `1.0.2` (18 Jan 2021)
-#### `1.0.1` (17 Jan 2021)
+#### `1.0.2` (2021-01-18)
+#### `1.0.1` (2021-01-17)
 - Squash bugs
 
-#### `1.0.0` (17 Jan 2021)
+#### `1.0.0` (2021-01-17)
 - Add some misc. helper functions
