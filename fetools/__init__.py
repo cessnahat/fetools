@@ -1,5 +1,8 @@
 import os
 
+__all__ = ["pause", "cls", "rgb_to_int", "int_to_rgb"]
+
+
 #########################
 # Misc. helpers
 #########################
