@@ -2,7 +2,7 @@
 
 # FE Tools
 
-A toolset for VATUSA FEs.
+A Python library for VATUSA FEs.
 
 ## Requirements
 - Python 3.6+
