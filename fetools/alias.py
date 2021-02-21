@@ -61,7 +61,7 @@ class AliasCommands:
             return output
         elif client.lower() in ("vstars", "veram"):
             # Write to '.xml' format (vSTARS & vERAM)
-            root = self.dumpxml()
+            root = self._dumpxml()
             # (ET.indent only works in Python 3.9+)
             try:
                 ET.indent(root)
@@ -71,7 +71,7 @@ class AliasCommands:
         else:
             raise ValueError("unknown client " + repr(client))
 
-    def dumpxml(self):
+    def _dumpxml(self):
         """ Returns an xml.etree.ElementTree Element object """
         root = ET.Element("CommandAliases")
         for cmd, act in self.aliases.items():
