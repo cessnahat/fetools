@@ -1,5 +1,8 @@
 ## Changelog
 
+#### `1.2.1-post` (2021-02-21)
+- Rename `fetools.alias.AliasCommands.dumpxml` to `fetools.alias.AliasCommands._dumpxml`
+
 #### `1.2.1` (2021-02-16)
 - Bug fixes to fetools.alias
 
