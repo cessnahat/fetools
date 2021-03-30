@@ -6,7 +6,7 @@ with open("README.md", "rt") as f:
 setup(
 	name="fetools",
 	version="1.2.1-post",
-	description="Makes some tasks easier for VATUSA FEs.",
+	description="Python library for VATUSA FEs.",
 	long_description=long_desc,
 	long_description_content_type="text/markdown",
 	url="https://github.com/cessnahat/fetools",
