@@ -1,5 +1,8 @@
 ## Changelog
 
+#### `1.3.0` (2021-08-05)
+- Add tools for working with POF files (`fetools.pof`)
+
 #### `1.2.1-post` (2021-02-21)
 - Rename `fetools.alias.AliasCommands.dumpxml` to `fetools.alias.AliasCommands._dumpxml`
 
