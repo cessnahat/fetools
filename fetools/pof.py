@@ -35,10 +35,10 @@ class Positions:
         p["hsquawk"] = str(hsquawk)
         self._positions[name] = p
 
-    def set(self, sectName, **kwargs):
+    def set(self, name, **kwargs):
         # Check if position even exists
-        if sectName not in self._positions:
-            raise KeyError(f'"{sectName}" is not an existing position')
+        if name not in self._positions:
+            raise KeyError(f'"{name}" is not an existing position')
         """ Set/change a property of a position """
         params = [
             "rname", "freq", "secid", "artstag", "callprefix", "callsuffix",
@@ -52,13 +52,13 @@ class Positions:
             val = v
             if k == "rname":
                 # Format rname
-                val = sectName if v == "-" else v
+                val = name if v == "-" else v
             elif k == "freq":
                 # Pad frequency
                 val = str(v).ljust(7, "0")
             elif k in ["hsquawk", "lsquawk"]:
                 val = str(v)
-            self._positions[sectName][k] = val
+            self._positions[name][k] = val
 
     def rename(self, old, new):
         # Check if position even exists
@@ -86,9 +86,13 @@ class Positions:
     def positions(self):
         return list(self._positions.keys())
 
-    # def dump(self, file_obj, client):
-    #     """ Writes Positions to passed-in file-like object """
-    #     file_obj.write(self.dumps(client))
+    def dump(self, file, client):
+        """ Writes Positions to file """
+        if type(file) is str:
+            with open(file, "w") as f:
+                f.write(self.dumps(client))
+        else:
+            file.write(self.dumps(client))
 
     def dumps(self, client):
         """ Returns a string in either the VRC txt or vSTARS/vERAM xml format """
