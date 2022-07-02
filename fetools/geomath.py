@@ -64,44 +64,44 @@ dmstodd = sct2todd
 
 
 def nasrtodd(latText, lonText) -> tuple:
-  """ Converts the NASR ddd-mm-ss.sssH format to decimal degrees """
-  # Latitude
-  latDecl = latText[-1]
-  latVals = latText.split("-")
-  latDeg = int(latVals[0])
-  latMin = int(latVals[1])
-  latSec = float(latVals[2][:-1])
-  latDD = latDeg + latMin/60 + latSec/3600
-  if latDecl == "S":
-    latDD *= -1
-  # Longitude
-  lonDecl = lonText[-1]
-  lonVals = lonText.split("-")
-  lonDeg = int(lonVals[0])
-  lonMin = int(lonVals[1])
-  lonSec = float(lonVals[2][:-1])
-  lonDD = lonDeg + lonMin/60 + lonSec/3600
-  if lonDecl == "W":
-    lonDD *= -1
-  # Return result
-  return latDD, lonDD
+    """ Converts the NASR ddd-mm-ss.sssH format to decimal degrees """
+    # Latitude
+    latDecl = latText[-1]
+    latVals = latText.split("-")
+    latDeg = int(latVals[0])
+    latMin = int(latVals[1])
+    latSec = float(latVals[2][:-1])
+    latDD = latDeg + latMin/60 + latSec/3600
+    if latDecl == "S":
+        latDD *= -1
+    # Longitude
+    lonDecl = lonText[-1]
+    lonVals = lonText.split("-")
+    lonDeg = int(lonVals[0])
+    lonMin = int(lonVals[1])
+    lonSec = float(lonVals[2][:-1])
+    lonDD = lonDeg + lonMin/60 + lonSec/3600
+    if lonDecl == "W":
+        lonDD *= -1
+    # Return result
+    return latDD, lonDD
 
 
 def ddtonasr(latDD, lonDD):
     """ Converts decimal degrees to the NASR ddd-mm-ss.sssH format """
-  # Latitude
-  latDecl = "N" if latDD >= 0 else "S"
-  latDD = abs(latDD)
-  latDeg = int(latDD)
-  latMin = int((latDD-latDeg) * 60)
-  latSec = round(((latDD-latDeg)*60 - latMin) * 60, 3)
-  lat = f"{latDeg}-{latMin}-{latSec:06.3f}{latDecl}"
-  # Longitude
-  lonDecl = "E" if lonDD >= 0 else "W"
-  lonDD = abs(lonDD)
-  lonDeg = int(lonDD)
-  lonMin = int((lonDD-lonDeg) * 60)
-  lonSec = round(((lonDD-lonDeg)*60 - lonMin) * 60, 3)
-  lon = f"{lonDeg}-{lonMin}-{lonSec:06.3f}{lonDecl}"
-  # Return result
-  return lat, lon
+    # Latitude
+    latDecl = "N" if latDD >= 0 else "S"
+    latDD = abs(latDD)
+    latDeg = int(latDD)
+    latMin = int((latDD-latDeg) * 60)
+    latSec = round(((latDD-latDeg)*60 - latMin) * 60, 3)
+    lat = f"{latDeg}-{latMin}-{latSec:06.3f}{latDecl}"
+    # Longitude
+    lonDecl = "E" if lonDD >= 0 else "W"
+    lonDD = abs(lonDD)
+    lonDeg = int(lonDD)
+    lonMin = int((lonDD-lonDeg) * 60)
+    lonSec = round(((lonDD-lonDeg)*60 - lonMin) * 60, 3)
+    lon = f"{lonDeg}-{lonMin}-{lonSec:06.3f}{lonDecl}"
+    # Return result
+    return lat, lon
