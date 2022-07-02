@@ -1,5 +1,6 @@
 ## Changelog
 
+#### `1.4.1` (2022-07-02)
 #### `1.4.0` (2022-07-02)
 - Add helper functions for converting between the NASR ddd-mm-ss.sssH format and decimal degrees to `fetools.geomath`
 - In `fetools.geomath`, renamed `ddtodms` to `ddtosct2` and `dmstodd` to `sct2todd` (old names are still there just in case)
