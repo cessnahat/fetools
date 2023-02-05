@@ -5,7 +5,7 @@ with open("README.md", "rt") as f:
 
 setup(
 	name="fetools",
-	version="1.4.1",
+	version="1.4.2",
 	description="Python library for VATUSA FEs.",
 	long_description=long_desc,
 	long_description_content_type="text/markdown",

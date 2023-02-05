@@ -1,5 +1,8 @@
 ## Changelog
 
+#### `1.4.2` (2023-02-05)
+- Corrected `fetools.geomath.sct2todd` to return the correct type (a tuple of floats, not strings)
+
 #### `1.4.1` (2022-07-02)
 #### `1.4.0` (2022-07-02)
 - Add helper functions for converting between the NASR ddd-mm-ss.sssH format and decimal degrees to `fetools.geomath`
