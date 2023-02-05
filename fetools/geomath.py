@@ -47,18 +47,18 @@ def sct2todd(lat:str, lon:str) -> tuple:
     if not lonMatch:
         raise ValueError(repr(lon) + "not a valid lon coordinate")
     # Format lat
-    ns = "-" if latMatch.group(1)=="S" else ""
+    ns = -1 if latMatch.group(1)=="S" else 1
     latD = int(latMatch.group(2))
     latM = int(latMatch.group(3))
     latS = float(latMatch.group(4))
     # Format lon
-    ew = "-" if lonMatch.group(1)=="W" else ""
+    ew = -1 if lonMatch.group(1)=="W" else 1
     lonD = int(lonMatch.group(2))
     lonM = int(lonMatch.group(3))
     lonS = float(lonMatch.group(4))
     # Convert to decimal degrees
-    latOut = ns + str(latD + latM/60 + latS/3600)
-    lonOut = ew + str(lonD + lonM/60 + lonS/3600)
+    latOut = ns * (latD + latM/60 + latS/3600)
+    lonOut = ew * (lonD + lonM/60 + lonS/3600)
     return latOut, lonOut
 dmstodd = sct2todd
 
